@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,600;0,800;1,800&display=swap');
+body{
+    font-family: "Poppins",sans-serif;
+    background-image: url(./bg3.webp);
+}
+.heading{
+    color: #fff;
+    margin: 50px 39.5%;
+    width: max-content;
+    letter-spacing: 1px;
+}
+.links a{
+    display: inline-block;
+    padding: 0.9rem 1.2rem;
+    color: white;
+    font: 1.05rem;
+    line-height: 1;
+    transition: 0.3s;
+}
+nav{
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+.container{
+    max-width: 92rem;
+    padding: 0 4rem;
+    margin: 0 auto;    
+}
+nav .container{
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    transition: 0.3s;
+}
+.links a:hover{
+    color:blueviolet;
+}
+.title{
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    padding-bottom: .3rem;
+    line-height: 1;
+    font-size: 1.7rem;
+    margin-bottom: 0.6rem;
+}
+.title:before{
+    content: attr(data-title);
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #6b44e0;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.title:after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #6b44e0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* End General Styles */
+
+/* Resume Templates */
+
+.grid{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 130px;
+        height: auto;
+        justify-content: center;
+        margin: 40px 4%;
+        row-gap: 40px;
+        width: 92%;
+    }
+.grid-item{
+        border: 1px solid #00000033;
+        border-radius: 5px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        width:270px;
+    }
+.gal-img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    -ms-transform: translate(-50% -50%);
+    text-align: center;
+}
+.gal-img:hover .image{
+    opacity:.5;
+}
+.gal-img:hover .middle{
+    opacity: 1;
+}
+.content{
+    background-color: #6b44e0;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #222;
+    padding: 6rem 0;
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+}
+.footer .grid-4{
+    display: grid;
+    grid-template-columns: 3.5fr 2fr 2fr;
+}
+.grid-4-col{
+    padding: 0 1.7rem;
+}
+
+.footer .title-sm{
+    color:#fafafa;
+    margin-bottom: 0.9rem;
+}
+
+.footer .text{
+    color:#aaa;
+}
+
+.footer-links a{
+    color:#888;
+    font-size: 1.25rem;
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    transition:0.3s;
+}
+.footer-links li{
+    list-style: none;
+}
+.footer-links a:hover{
+    color:#6b44e0;
+}
+
+.footer-input-wrap{
+    display:grid;
+    grid-template-columns:auto 50px;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 1.2rem;
+}
+.footer-input{
+    background: #373737;
+    color:#333;
+    outline:none;
+    border:none;
+    padding:0 1.5rem;
+    font-size:1.1rem;
+    transition: 0.3s;
+}
+.input-arrow{
+    color:#fff;
+    background-color: #6b44e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.45rem;
+    transition:.3s;
+}
+.input-arrow:hover{
+    background-color: #4728a4;
+}
+.focus{
+    background: #fff;
+}
+.copyright{
+    margin-top:3rem;
+}
+
+/* END FOOTER */
